@@ -1,0 +1,4 @@
+LibriSpeech
+train-clean-100.tar.gz
+train-clean-360.tar.gz
+train-other-500.tar.gz
