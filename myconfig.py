@@ -4,13 +4,13 @@ import os
 import torch
 
 # Define the paths to training and testing data
-TRAIN_DATA_DIR = os.path.join(os.path.expanduser('~'), r"D:\Code\BachKhoa\PBL 5\PBL05_smart_home_with_voice_print_and_antifraud_ai\AI Module\Speaker Recognition\LSTM\LibriSpeech\train-clean-360")
-TEST_DATA_DIR = os.path.join(os.path.expanduser('~'), r"D:\Code\BachKhoa\PBL 5\PBL05_smart_home_with_voice_print_and_antifraud_ai\AI Module\Speaker Recognition\LSTM\LibriSpeech\test-clean")
+TRAIN_DATA_DIR = os.path.join(os.path.expanduser('~'), r"D:\Code\BachKhoa\PBL 5\PBL05_smart_home_with_voice_print_and_antifraud_ai\AI Module\Speaker_Recognition\LSTM\LibriSpeech\train-clean-360")
+TEST_DATA_DIR = os.path.join(os.path.expanduser('~'), r"D:\Code\BachKhoa\PBL 5\PBL05_smart_home_with_voice_print_and_antifraud_ai\AI Module\Speaker_Recognition\LSTM\LibriSpeech\test-clean")
 
 # Create a timestamp for model saving
 timestamp = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
 filename = f"saved_model_{timestamp}.pt"
-SAVED_MODEL_PATH = os.path.join(os.path.expanduser('~'), r"D:\Code\BachKhoa\PBL 5\PBL05_smart_home_with_voice_print_and_antifraud_ai\AI Module\Speaker Recognition\LSTM\saved_model", filename)
+SAVED_MODEL_PATH = os.path.join(os.path.expanduser('~'), r"D:\Code\BachKhoa\PBL 5\PBL05_smart_home_with_voice_print_and_antifraud_ai\AI Module\Speaker_Recognition\LSTM\saved_model", filename)
 
 # Number of samples in each training batch
 BATCH_SIZE = 8
